@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="aip.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<video autoplay muted loop id="video">
+  <source src="assets/aa.mp4" type="video/mp4">
+</video>
+
+<div id="main">
+  <span class="player-icon" id="player1-icon"></span>
+  <span style="color: white;">Player</span>
+  <span id="vs"> vs </span>
+  <span style="color: white;">AI</span>
+  <span class="player-icon" id="player2-icon"></span>
+</div>
+
+<div id="status"></div>
+
+<div class="container">
+  <div data-index="0" class="box"></div>
+  <div data-index="1" class="box"></div>
+  <div data-index="2" class="box"></div>
+  <div data-index="3" class="box"></div>
+  <div data-index="4" class="box"></div>
+  <div data-index="5" class="box"></div>
+  <div data-index="6" class="box"></div>
+  <div data-index="7" class="box"></div>
+  <div data-index="8" class="box"></div>
+</div>
+
+<button id="restart">Restart</button>
+
+<script src="aip.js"></script>
+
+</body>
+</html>

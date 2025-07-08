@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chewy", cursive;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  
+  #main {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #vs {
+    color: white;
+    font-size: 30px;
+    margin: 0 15px;
+  }
+  
+  #status {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 8px #00fff2, 0 0 16px #00008b, 0 0 24px #00f7ff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+     }
+
+ 
+  .box:hover {
+    background-color: #00f7ff;
+    box-shadow: 0 0 8px #6d6dea, 0 0 16px #6d6dea, 0 0 24px #6d6dea;
+  }
+  
+  .box img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .player-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  #restart {
+    width: 120px;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff073a;
+    border: 2px solid #ff073a;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px #c73552, 0 0 16px #ff073a;
+    transition: all 0.3s;
+  }
+  
+  #restart:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 12px #ff0000, 0 0 20px #ff0000, 0 0 28px #ff073a;
+    transform: scale(1.1);
+  }
+  
+  .win {
+    animation: winAni 1s infinite;
+  }
+  
+  @keyframes winAni {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }

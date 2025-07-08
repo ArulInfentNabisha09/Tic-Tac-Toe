@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Icon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="selai.css">
+</head>
+<body>
+  <video autoplay muted loop id="video">
+    <source src="assets/back.mp4" type="video/mp4">
+  </video>
+
+  <div id="im">
+    <div class="content-container">
+      <h1 id="tic">CHOOSE YOUR ICON</h1>
+      <p id="wel">Player: Select your icon</p>
+
+      <div id="player">
+        <h3 style="color: rgb(255, 251, 0);">Player</h3>
+        <div class="button-container">
+          <button class="icon-button" onclick="selectIcon('ti')">
+            <img src="assets/ti.png" alt="Lollipop">
+          </button>
+          <button class="icon-button" onclick="selectIcon('do')">
+            <img src="assets/do.jpg" alt="Donut">
+          </button>
+        </div>
+        <p id="resultPlayer" class="result-text"></p>
+      </div>
+
+      <div id="ai">
+        <h3 style="color: tomato;">AI Opponent</h3>
+        <p id="resultAI" class="result-text"></p>
+      </div>
+
+      <!-- Start Game Button -->
+      <a href="aip.html" id="startGameButton" class="btn" style="display: none;">Start Game</a>
+    </div>
+  </div>
+
+  <script src="selai.js"></script>
+</body>
+</html>

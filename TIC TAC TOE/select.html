@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Icon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="select.css">
+</head>
+<body>
+  <video autoplay muted loop id="video">
+    <source src="assets/back.mp4" type="video/mp4">
+  </video>
+
+  <div id="im">
+    <div class="content-container">
+      <h1 id="tic">CHOOSE YOUR ICON</h1>
+      <p id="wel">Player-1: Select your icon</p>
+
+      <div id="player1">
+        <h3 style="color: rgb(255, 251, 0);">Player-1</h3>
+        <div class="button-container">
+          <button class="icon-button" onclick="selectIcon('ti')">
+            <img src="assets/ti.png" alt="Lollipop">
+          </button>
+          <button class="icon-button" onclick="selectIcon('do')">
+            <img src="assets/do.jpg" alt="Donut">
+          </button>
+        </div>
+        <p id="result1" style="font-weight: bold; color: white;   text-shadow:
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;"></p>
+      </div>
+
+      <div id="player2">
+        <h3 style="color: tomato;">Player-2</h3>
+        <p id="result2" style="font-weight: bold;  color: white; text-shadow:
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;"></p>
+      </div>
+
+      <!-- Start Game Button -->
+      <a href="page.html" id="startGameButton" class="btn" style="display: none;">Start Game</a>
+    </div>
+  </div>
+
+  <script src="select.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Icon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="select.css">
+</head>
+<body>
+  <video autoplay muted loop id="video">
+    <source src="assets/back.mp4" type="video/mp4">
+  </video>
+
+<div id="im">
+  <div class="content-container">
+    <h1 id="tic">CHOOSE YOUR ICON</h1>
+    <p id="wel">Player-1: Select your icon</p>
+
+    <div id="player1">
+      <h3 style="color: rgb(255, 251, 0);">Player-1</h3>
+      <div class="button-container">
+        <button class="icon-button" onclick="selectIcon('ti')">
+          <img src="assets/ti.png" alt="Lollipop">
+        </button>
+        <button class="icon-button" onclick="selectIcon('do')">
+          <img src="assets/do.jpg" alt="Donut">
+        </button>
+      </div>
+      <p id="result1" style="font-weight: bold; color: white;"></p>
+    </div>
+
+    <div id="player2">
+      <h3 style="color: tomato;">Player-2</h3>
+      <p id="result2" style="font-weight: bold; color: white;"></p>
+    </div>
+
+     Start Game button 
+    <a href="page.html" id="startGameButton" class="btn" style="display: none;">Start Game</a>
+  </div>
+</div>
+
+<script src="select.js"></script>
+</body>
+</html>
+ -->
